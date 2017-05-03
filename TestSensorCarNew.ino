@@ -48,7 +48,7 @@ void loop() {
     int sensorValueL = str.toInt();
     int sensorValueR = str2.toInt();
     //เดินตามเส้นสีดำ
-    if (sensorValueL == 0 && sensorValueR <= 0) { //ขาวและขาว ตรง
+    if (sensorValueL == 0 && sensorValueR == 0) { //ขาวและขาว ตรง
       walk();
     }
     else if (sensorValueL == 0 && sensorValueR == 1) { //ขาวซ้ายและดำขวา เรียวขวา
